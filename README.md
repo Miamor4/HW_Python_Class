@@ -59,6 +59,7 @@ In particular, we want the latest version of numpy.
 
 Activate the hw-env to make sure if builds correctly after your changes.
 ```bash
+conda env create -f environment.yml
 conda activate hw-env
 ```
 
