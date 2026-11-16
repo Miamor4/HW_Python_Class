@@ -12,6 +12,17 @@ A folder named `[your group]/<your-github-username>/` pushed to this repository,
 
 1. `screenshot.png`: a screenshot of your terminal showing `python run_example.py` succeeding (see Part 4)
 ---
+## Part 0: Set up
+ - If you don't have email access set up a github account using your personal email. 
+- Open a terminal and navigate to your Desktop. If you are in windows use WSL (you might have to install it). If you are using a mac run git --version and follow the instructions.
+- You will need to login to github from your terminal. First you need to install brew. /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+- I recommend using github CLI. Run `brew install gh`. 
+- run ```bash 
+gh auth login```
+- Select Github.com as the type to authenticate and choose HTTPS
+- Authenticate with y using git in the terminal
+- Login to the Web and use the one time code from your terminal to login.
+
 
 ## Part 1: Download the repository
 
@@ -23,6 +34,8 @@ git checkout -b [FirstName_LastName]
 ```
 
 This tells git to ignore any changes you make to `environment.yml`, so your fix stays on your computer and the file stays broken for everyone else. (You'll still submit a copy of your fix in your own folder in Part 5.)
+
+Hint: If you scroll up to the code button
 
 ---
 
@@ -44,7 +57,7 @@ In particular, we want the latest version of numpy.
 
 ## Part 4: Run the code
 
-With `hw-env` active:
+Activate the hw-env to make sure if builds correctly after your changes.
 
 ```bash
 python run_example.py
@@ -65,7 +78,7 @@ numpy (version) | pandas version
 
 1. **Get the latest changes** so your push isn't rejected:
    ```bash
-   git pull
+   git pull origin main
    ```
 
 2. **Make your submission folder** using your GitHub username:
