@@ -22,21 +22,26 @@ gh auth login```
 - Select Github.com as the type to authenticate and choose HTTPS
 - Authenticate with y using git in the terminal
 - Login to the Web and use the one time code from your terminal to login.
+- NB: If you decide to use SSH authentication you will be on your own
 
 
-## Part 1: Download the repository
+## Part 1: Fork and download the repository
+
+1. Go to https://github.com/Tonnar/HW_Python_Class and click **Fork** (top right), then
+   **Create fork**. This makes your own copy of the repo at
+   `https://github.com/<your-github-username>/HW_Python_Class`.
+
+2. Clone **your fork** (not the class repo):
 
 ```bash
-git clone <REPO-URL>
-cd <REPO-NAME>
+git clone https://github.com/<your-github-username>/HW_Python_Class.git
+cd HW_Python_Class
+git remote add upstream https://github.com/Tonnar/HW_Python_Class.git
 git update-index --skip-worktree environment.yml
-git checkout -b [FirstName_LastName]
+git checkout -b FirstName_LastName
 ```
 
-This tells git to ignore any changes you make to `environment.yml`, so your fix stays on your computer and the file stays broken for everyone else. (You'll still submit a copy of your fix in your own folder in Part 5.)
-
-Hint: If you scroll up to the code button
-
+`origin` is your fork (where you push). `upstream` is the class repo (where you get updates).
 ---
 
 ## Part 2: Try to create the environment
