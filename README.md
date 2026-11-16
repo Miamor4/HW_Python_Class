@@ -58,6 +58,10 @@ In particular, we want the latest version of numpy.
 ## Part 4: Run the code
 
 Activate the hw-env to make sure if builds correctly after your changes.
+```bash
+conda activate hw-env
+```
+
 
 ```bash
 python run_example.py
