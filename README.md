@@ -83,7 +83,7 @@ numpy (version) | pandas version
 
 1. **Get the latest changes** so your push isn't rejected:
    ```bash
-   git pull origin main
+   git pull upstream main
    ```
 
 2. **Make your submission folder** using your GitHub username:
