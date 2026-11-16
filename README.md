@@ -77,7 +77,7 @@ numpy (version) | pandas version
 
 4. **Commit and push:**
    ```bash
-   git add submissions/<your-github-username>
+   git add [your group]/<your-github-username>
    git commit -m "Submission: <your-github-username>"
    git push
    ```
