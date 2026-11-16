@@ -19,6 +19,7 @@ A folder named `[your group]/<your-github-username>/` pushed to this repository,
 git clone <REPO-URL>
 cd <REPO-NAME>
 git update-index --skip-worktree environment.yml
+git checkout -b [FirstName_LastName]
 ```
 
 This tells git to ignore any changes you make to `environment.yml`, so your fix stays on your computer and the file stays broken for everyone else. (You'll still submit a copy of your fix in your own folder in Part 5.)
@@ -79,9 +80,8 @@ numpy (version) | pandas version
    ```bash
    git add [your group]/<your-github-username>
    git commit -m "Submission: <your-github-username>"
-   git push
+   git push -u origin FirstName_LastName
    ```
+   There will be a link: https://github.com/Tonnar/HW_Python_Class/pull/new/FirstName_LastName. Follow the link and  create the the pull request. 
 
 > **Only add files inside your own folder.** Don't change anyone else's files.
-
----
