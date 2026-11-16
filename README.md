@@ -8,11 +8,9 @@ In this assignment you will clone a repository, build a conda environment, fix a
 
 ## What you'll turn in
 
-A folder named `submissions/<your-github-username>/` pushed to this repository, containing:
+A folder named `[your group]/<your-github-username>/` pushed to this repository, containing:
 
 1. `screenshot.png`: a screenshot of your terminal showing `python run_example.py` succeeding (see Part 4)
-2. `environment.yml`: your fixed copy of the environment file
-
 ---
 
 ## Part 1: Download the repository
@@ -40,6 +38,7 @@ conda env create -f environment.yml
 ## Part 3: Fix the environment
 
 Open `environment.yml` in a text editor. Your job is to change it so conda can install everything together.
+In particular, we want the latest version of numpy.
 ---
 
 ## Part 4: Run the code
@@ -54,7 +53,7 @@ Expected output (your exact version numbers may differ):
 
 ```
 hi
-numpy 1.26.4 | pandas 2.2.3
+numpy (version) | pandas version
 ```
 
 **Take a screenshot** of your terminal showing the command and both output lines. Save it as `screenshot.png`.
@@ -70,12 +69,11 @@ numpy 1.26.4 | pandas 2.2.3
 
 2. **Make your submission folder** using your GitHub username:
    ```bash
-   mkdir submissions/<your-github-username>
+   mkdir [your group]/<your-github-username>
    ```
 
 3. **Put your files in it:**
    - Move `screenshot.png` into the folder.
-   - Copy your fixed `environment.yml` into the folder.
 
 4. **Commit and push:**
    ```bash
