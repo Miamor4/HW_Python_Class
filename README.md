@@ -17,12 +17,12 @@ A folder named `[your group]/<your-github-username>/` pushed to this repository,
 - Open a terminal and navigate to your Desktop. If you are in windows use WSL (you might have to install it). If you are using a mac run git --version and follow the instructions.
 - You will need to login to github from your terminal. First you need to install brew. /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 - I recommend using github CLI. Run `brew install gh`. 
-- run ```bash 
-gh auth login```
+- run ``` 
+gh auth login``` in terminal
 - Select Github.com as the type to authenticate and choose HTTPS
 - Authenticate with y using git in the terminal
 - Login to the Web and use the one time code from your terminal to login.
-- NB: If you decide to use SSH authentication you will be on your own
+- **NB: If you decide to use SSH authentication you will be on your own**
 
 
 ## Part 1: Fork and download the repository
@@ -48,7 +48,7 @@ git checkout -b FirstName_LastName
 
 The file `environment.yml` lists the Python version and packages this project needs. Ask conda to build an environment from it:
 
-```bash
+```
 conda env create -f environment.yml
 ```
 
@@ -63,13 +63,13 @@ In particular, we want the latest version of numpy.
 ## Part 4: Run the code
 
 Activate the hw-env to make sure if builds correctly after your changes.
-```bash
+```
 conda env create -f environment.yml
 conda activate hw-env
 ```
 
 
-```bash
+```
 python run_example.py
 ```
 
@@ -87,12 +87,12 @@ numpy (version) | pandas version
 ## Part 5: Submit by pushing to the repo
 
 1. **Get the latest changes** so your push isn't rejected:
-   ```bash
+   ```
    git pull upstream main
    ```
 
 2. **Make your submission folder** using your GitHub username:
-   ```bash
+   ```
    mkdir [your group]/<your-github-username>
    ```
 
@@ -100,7 +100,7 @@ numpy (version) | pandas version
    - Move `screenshot.png` into the folder.
 
 4. **Commit and push:**
-   ```bash
+   ```
    git add [your group]/<your-github-username>
    git commit -m "Submission: <your-github-username>"
    git push -u origin FirstName_LastName
