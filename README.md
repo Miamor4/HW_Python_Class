@@ -15,7 +15,7 @@ A folder named `[your group]/<your-github-username>/` pushed to this repository,
 ## Part 0: Set up
  - If you don't have email access set up a github account using your personal email. 
 - Open a terminal and navigate to your Desktop. If you are in windows use WSL (you might have to install it). If you are using a mac run git --version and follow the instructions.
-- You will need to login to github from your terminal. First you need to install brew. /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+- You will need to login to github from your terminal. First you need to install brew. ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
 - I recommend using github CLI. Run `brew install gh`. 
 - run ``` 
 gh auth login``` in terminal
